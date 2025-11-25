@@ -1,0 +1,550 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>KW Explore – Agent Preview</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- Inter font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet"
+  />
+
+  <!-- Tailwind CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['Inter', 'system-ui', 'sans-serif'],
+          },
+          colors: {
+            kwred: '#C70000',
+          },
+        },
+      },
+    };
+  </script>
+
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+  </style>
+</head>
+<body class="bg-black text-white min-h-screen font-sans">
+  <!-- Top Bar -->
+  <header class="border-b border-neutral-800 bg-black/80 backdrop-blur sticky top-0 z-20">
+    <div class="max-w-5xl mx-auto px-4 py-3 flex items-center justify-between gap-4">
+      <div class="flex items-center gap-3">
+        <img
+          src="KW Explore RED & WHITE.png"
+          alt="KW Explore Realty"
+          class="h-8 md:h-10 w-auto"
+        />
+        <div class="leading-tight hidden sm:block">
+          <div class="text-[11px] font-semibold uppercase tracking-[0.18em] text-kwred">
+            Keller Williams Explore
+          </div>
+          <div class="text-[11px] text-neutral-400">
+            Where Entrepreneurs Thrive
+          </div>
+        </div>
+      </div>
+
+      <nav class="hidden md:flex gap-4 text-xs font-medium text-neutral-300">
+        <a href="#money" class="hover:text-kwred transition-colors">Splits</a>
+        <a href="#registration" class="hover:text-kwred transition-colors">Registration</a>
+        <a href="#training" class="hover:text-kwred transition-colors">Training</a>
+        <a href="#how-we-work" class="hover:text-kwred transition-colors">How We Work</a>
+        <a href="#next-step" class="hover:text-kwred transition-colors">Next Step</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="max-w-5xl mx-auto px-4 pb-16 pt-8 space-y-10">
+    <!-- HERO -->
+    <section class="grid gap-8 md:grid-cols-[1.4fr,1fr] items-center">
+      <div>
+        <p class="text-xs font-semibold tracking-[0.25em] uppercase text-neutral-400 mb-3">
+          Agent preview experience
+        </p>
+        <h1 class="text-3xl md:text-4xl font-semibold tracking-tight mb-4">
+          See how your business looks at
+          <span class="text-kwred">KW Explore</span>
+          before our first meeting.
+        </h1>
+        <p class="text-sm md:text-base text-neutral-300 mb-6 max-w-xl">
+          This mini app gives you a quick, honest view of how our
+          commission model, registration support and training work together
+          to help you build a more profitable, scalable real estate business.
+        </p>
+
+        <div class="flex flex-wrap gap-3">
+          <a
+            href="#next-step"
+            class="inline-flex items-center justify-center px-4 py-2 text-sm font-medium rounded-full bg-kwred hover:bg-red-700 transition-colors"
+          >
+            Book a 1:1 business consult
+          </a>
+          <a
+            href="https://wa.me/27840624865"
+            class="inline-flex items-center justify-center px-4 py-2 text-sm font-medium rounded-full border border-neutral-700 hover:border-kwred hover:text-kwred transition-colors"
+          >
+            WhatsApp Dawie
+          </a>
+        </div>
+
+        <p class="mt-3 text-[11px] text-neutral-500">
+          No group interview. No pressure. Just a confidential look at your numbers and options.
+        </p>
+      </div>
+
+      <div class="space-y-3">
+        <div class="relative overflow-hidden rounded-2xl border border-neutral-800 bg-gradient-to-br from-neutral-950 via-black to-neutral-900 p-4 shadow-xl">
+          <div class="flex items-center justify-between mb-3">
+            <div>
+              <p class="text-[11px] uppercase tracking-[0.2em] text-neutral-400">
+                Explore Splits
+              </p>
+              <p class="text-lg font-semibold">Cap R140 000</p>
+            </div>
+            <span class="px-2 py-1 rounded-full bg-neutral-900 text-[11px] text-neutral-300 border border-neutral-700">
+              Capped model
+            </span>
+          </div>
+          <div class="grid grid-cols-2 gap-3 text-xs">
+            <div class="space-y-1">
+              <p class="text-[11px] font-semibold text-neutral-400 uppercase tracking-[0.16em]">
+                Sales
+              </p>
+              <p class="text-sm font-semibold">70 / 30</p>
+              <p class="text-[11px] text-neutral-400">
+                70% agent • 30% market centre until you reach your annual cap.
+              </p>
+            </div>
+            <div class="space-y-1">
+              <p class="text-[11px] font-semibold text-neutral-400 uppercase tracking-[0.16em]">
+                Rentals (Placement)
+              </p>
+              <p class="text-sm font-semibold">60 / 40</p>
+              <p class="text-[11px] text-neutral-400">
+                Rentals contribute to your cap, but you do not cap on rentals.
+              </p>
+            </div>
+          </div>
+          <div class="mt-3 border-t border-neutral-800 pt-3 grid grid-cols-2 gap-3 text-[11px]">
+            <div>
+              <p class="font-semibold text-neutral-200 mb-1">Once capped</p>
+              <ul class="space-y-1 text-neutral-400">
+                <li>Sales: <span class="font-semibold text-neutral-100">100%</span></li>
+                <li>R1 500 transaction fee per sales transaction applies.</li>
+                <li>Rentals: remain on 60 / 40.</li>
+              </ul>
+            </div>
+            <div>
+              <p class="font-semibold text-neutral-200 mb-1">Royalties & Growthshare</p>
+              <ul class="space-y-1 text-neutral-400">
+                <li>Royalties: <span class="font-semibold text-kwred">6%</span></li>
+                <li>Growthshare: <span class="font-semibold text-kwred">2%</span></li>
+                <li>Both deducted on all splits.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="rounded-2xl border border-neutral-800 bg-neutral-950/70 px-4 py-3 text-[11px] text-neutral-300">
+          <p class="font-semibold text-neutral-100 mb-1">
+            Productivity Coach
+          </p>
+          <p>• 20% on deals 1–5</p>
+          <p>• 10% from deal 6 while qualified and capped</p>
+          <p class="mt-1 text-[10px] text-neutral-400">
+            Applied on both sales and rentals – focused on helping you into production fast.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- MONEY MODEL SECTION -->
+    <section id="money" class="space-y-4">
+      <div class="flex items-center justify-between gap-2">
+        <h2 class="text-xl md:text-2xl font-semibold tracking-tight">
+          How your money works at <span class="text-kwred">KW Explore</span>
+        </h2>
+        <span class="hidden md:inline-flex text-[11px] px-2 py-1 rounded-full border border-neutral-700 text-neutral-300">
+          Transparent. Capped. Agent-focused.
+        </span>
+      </div>
+
+      <div class="grid gap-4 md:grid-cols-3">
+        <div class="rounded-2xl border border-neutral-800 bg-neutral-950/80 p-4 text-sm">
+          <p class="text-[11px] font-semibold uppercase tracking-[0.18em] text-neutral-400 mb-2">
+            1. Split & cap
+          </p>
+          <p class="mb-2">
+            You are on <span class="font-semibold">70/30</span> for sales and
+            <span class="font-semibold">60/40</span> for rental placements
+            until you have paid
+            <span class="font-semibold text-kwred">R140 000</span> to the market centre
+            (your annual cap).
+          </p>
+          <p class="text-neutral-400 text-xs">
+            Rentals contribute towards your cap. You do not cap on rentals themselves.
+          </p>
+        </div>
+
+        <div class="rounded-2xl border border-neutral-800 bg-neutral-950/80 p-4 text-sm">
+          <p class="text-[11px] font-semibold uppercase tracking-[0.18em] text-neutral-400 mb-2">
+            2. After you cap
+          </p>
+          <p class="mb-2">
+            Once capped, your sales commission moves to
+            <span class="font-semibold text-kwred">100%</span>
+            for the balance of your anniversary year.
+          </p>
+          <ul class="text-xs text-neutral-400 space-y-1">
+            <li>• R1 500 transaction fee per sales transaction.</li>
+            <li>• Rentals remain at 60/40.</li>
+            <li>• Royalties (6%) and Growthshare (2%) still apply.</li>
+          </ul>
+        </div>
+
+        <div class="rounded-2xl border border-neutral-800 bg-neutral-950/80 p-4 text-sm">
+          <p class="text-[11px] font-semibold uppercase tracking-[0.18em] text-neutral-400 mb-2">
+            3. Beyond your own deals
+          </p>
+          <p class="mb-2">
+            When you help grow the company by attracting productive agents, you can earn
+            <span class="font-semibold">Growthshare</span>
+            on their production – a long-term, leveraged income line.
+          </p>
+          <p class="text-xs text-neutral-400">
+            This sits on top of your personal sales and rental income.
+          </p>
+        </div>
+      </div>
+
+      <div class="rounded-2xl border border-neutral-800 bg-gradient-to-br from-neutral-950 via-black to-neutral-900 p-4 md:p-5 text-xs md:text-sm">
+        <p class="font-semibold mb-2 text-neutral-100">
+          Simple example (illustrative)
+        </p>
+        <p class="text-neutral-300 mb-1">
+          If you close ±2 sales per month at your current average commission:
+        </p>
+        <ul class="space-y-1 text-neutral-300">
+          <li>• You reach your cap, then keep 100% (less fees) on sales for the rest of your year.</li>
+          <li>• Rentals you place keep contributing to your cap and your monthly cash flow.</li>
+          <li>• Any agents you introduce that join and produce can add Growthshare on top.</li>
+        </ul>
+        <p class="mt-2 text-[11px] text-neutral-400">
+          In our 1:1 session we plug in your real numbers and compare "stay where you are" vs "move to KW Explore".
+        </p>
+      </div>
+    </section>
+
+    <!-- REGISTRATION SECTION -->
+    <section id="registration" class="space-y-4">
+      <h2 class="text-xl md:text-2xl font-semibold tracking-tight">
+        Registration, BOC and compliance support
+      </h2>
+
+      <p class="text-sm text-neutral-300 max-w-3xl">
+        To trade legally as an estate agent in South Africa you must be registered with
+        the PPRA and hold a valid Fidelity Fund Certificate (FFC). At KW Explore you are
+        not left to figure this out alone – we walk you through each step.
+      </p>
+
+      <div class="space-y-6">
+        <!-- INTERN PROCESS -->
+        <div>
+          <h3 class="text-sm md:text-base font-semibold tracking-tight mb-1">
+            Intern Property Practitioner process (new to the industry)
+          </h3>
+          <p class="text-xs md:text-sm text-neutral-300 mb-3 max-w-3xl">
+            For agents entering the industry or without a current FFC. We help you move from
+            zero to fully registered, productive intern.
+          </p>
+
+          <div class="grid gap-4 md:grid-cols-4 text-xs md:text-sm">
+            <div class="rounded-2xl border border-neutral-800 bg-neutral-950/80 p-4">
+              <p class="text-[11px] font-semibold uppercase tracking-[0.2em] text-neutral-400 mb-1">
+                Step 1
+              </p>
+              <p class="font-semibold mb-1">Join KW Explore</p>
+              <p class="text-neutral-300">
+                Sign your independent contractor agreement, choose your launch date and meet the
+                leadership team.
+              </p>
+            </div>
+
+            <div class="rounded-2xl border border-neutral-800 bg-neutral-950/80 p-4">
+              <p class="text-[11px] font-semibold uppercase tracking-[0.2em] text-neutral-400 mb-1">
+                Step 2
+              </p>
+              <p class="font-semibold mb-1">BOC & PPRA intern application</p>
+              <p class="text-neutral-300">
+                We assist with your intern registration: PPRA forms, supporting documents, proof of
+                payment and your employment letter from the Principal.
+              </p>
+            </div>
+
+            <div class="rounded-2xl border border-neutral-800 bg-neutral-950/80 p-4">
+              <p class="text-[11px] font-semibold uppercase tracking-[0.2em] text-neutral-400 mb-1">
+                Step 3
+              </p>
+              <p class="font-semibold mb-1">FFC issued & supervised trading</p>
+              <p class="text-neutral-300">
+                Once your intern FFC is issued you are compliant to trade as an intern property
+                practitioner under supervision, using our systems and models.
+              </p>
+            </div>
+
+            <div class="rounded-2xl border border-neutral-800 bg-neutral-950/80 p-4">
+              <p class="text-[11px] font-semibold uppercase tracking-[0.2em] text-neutral-400 mb-1">
+                Step 4
+              </p>
+              <p class="font-semibold mb-1">Logbook, NQF4 & full status</p>
+              <p class="text-neutral-300">
+                We support you with logbook, NQF4 qualification and the final PPRA upgrade so you
+                move from intern to full-status agent.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- FULL STATUS PROCESS -->
+        <div>
+          <h3 class="text-sm md:text-base font-semibold tracking-tight mb-1">
+            Full status agent process (existing FFC / qualified)
+          </h3>
+          <p class="text-xs md:text-sm text-neutral-300 mb-3 max-w-3xl">
+            For agents who already hold an FFC or have completed the required qualifications.
+            We make the move to KW Explore structured and low-friction.
+          </p>
+
+          <div class="grid gap-4 md:grid-cols-4 text-xs md:text-sm">
+            <div class="rounded-2xl border border-neutral-800 bg-neutral-950/80 p-4">
+              <p class="text-[11px] font-semibold uppercase tracking-[0.2em] text-neutral-400 mb-1">
+                Step 1
+              </p>
+              <p class="font-semibold mb-1">Business & numbers consult</p>
+              <p class="text-neutral-300">
+                We review your current production, goals and financial model and design your
+                onboarding and launch plan.
+              </p>
+            </div>
+
+            <div class="rounded-2xl border border-neutral-800 bg-neutral-950/80 p-4">
+              <p class="text-[11px] font-semibold uppercase tracking-[0.2em] text-neutral-400 mb-1">
+                Step 2
+              </p>
+              <p class="font-semibold mb-1">Change of agency / BOC process</p>
+              <p class="text-neutral-300">
+                We handle the PPRA change of employment documentation, BOC updates and internal
+                onboarding paperwork with you.
+              </p>
+            </div>
+
+            <div class="rounded-2xl border border-neutral-800 bg-neutral-950/80 p-4">
+              <p class="text-[11px] font-semibold uppercase tracking-[0.2em] text-neutral-400 mb-1">
+                Step 3
+              </p>
+              <p class="font-semibold mb-1">Updated FFC & system access</p>
+              <p class="text-neutral-300">
+                Your FFC is updated to KW Explore and you are onboarded onto our tech stack,
+                templates and support structures.
+              </p>
+            </div>
+
+            <div class="rounded-2xl border border-neutral-800 bg-neutral-950/80 p-4">
+              <p class="text-[11px] font-semibold uppercase tracking-[0.2em] text-neutral-400 mb-1">
+                Step 4
+              </p>
+              <p class="font-semibold mb-1">Launch & growth plan</p>
+              <p class="text-neutral-300">
+                Together with leadership and your productivity coach we build your 90–180 day
+                launch and growth plan inside KW Explore.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="rounded-2xl border border-neutral-800 bg-neutral-950/80 p-4 text-xs md:text-sm mt-2">
+        <p class="font-semibold mb-2">Joining checklist (once you say yes)</p>
+        <ol class="list-decimal list-inside space-y-1 text-neutral-300">
+          <li>Complete the joining document on the link we send you.</li>
+          <li>Pay the <span class="font-semibold text-kwred">R3 500 joining fee</span> (includes 1 month BOC) and send proof of payment to the MCA.</li>
+          <li>Send supporting documents: ID/Passport, Proof of Bank, Proof of Address and a profile photo.</li>
+          <li>Onboarding session with DFI/MCTT – bring your laptop and phone so we can set up your systems and tools.</li>
+        </ol>
+        <p class="mt-2 text-[11px] text-neutral-400">
+          You will know exactly who to send what to, with clear emails and WhatsApp details in your welcome pack.
+        </p>
+      </div>
+
+      <p class="text-[11px] md:text-xs text-neutral-400 mt-3">
+        Whether you are starting out as an intern or arriving as a full-status agent, you focus on
+        production while we help you stay compliant, registered and on track with your career path.
+      </p>
+    </section>
+
+    <!-- TRAINING SECTION -->
+    <section id="training" class="space-y-4">
+      <h2 class="text-xl md:text-2xl font-semibold tracking-tight">
+        Training and coaching to grow your income
+      </h2>
+
+      <p class="text-sm text-neutral-300 max-w-3xl">
+        KW is built as a training and coaching company that happens to be in real estate.
+        The goal is simple: help you list more, sell more and keep more of what you earn.
+      </p>
+
+      <div class="grid gap-4 md:grid-cols-3 text-xs md:text-sm">
+        <div class="rounded-2xl border border-neutral-800 bg-neutral-950/80 p-4">
+          <p class="text-[11px] font-semibold uppercase tracking-[0.2em] text-neutral-400 mb-1">
+            Ignite
+          </p>
+          <p class="font-semibold mb-1">Launch your business</p>
+          <p class="text-neutral-300">
+            A structured series that teaches you the KW way of lead generation, working with buyers
+            and sellers, and building a predictable pipeline.
+          </p>
+        </div>
+
+        <div class="rounded-2xl border border-neutral-800 bg-neutral-950/80 p-4">
+          <p class="text-[11px] font-semibold uppercase tracking-[0.2em] text-neutral-400 mb-1">
+            KWU & Local Classes
+          </p>
+          <p class="font-semibold mb-1">Continuous skills</p>
+          <p class="text-neutral-300">
+            Live office training plus on-demand video via KW University – scripts, objection handling,
+            pricing, marketing, business planning and more.
+          </p>
+        </div>
+
+        <div class="rounded-2xl border border-neutral-800 bg-neutral-950/80 p-4">
+          <p class="text-[11px] font-semibold uppercase tracking-[0.2em] text-neutral-400 mb-1">
+            Coaching
+          </p>
+          <p class="font-semibold mb-1">Accountability & growth</p>
+          <p class="text-neutral-300">
+            Productivity coaching, growth conversations and advanced programs like BOLD/MAPS for
+            agents ready to scale.
+          </p>
+        </div>
+      </div>
+
+      <div class="rounded-2xl border border-neutral-800 bg-neutral-950/80 p-4 text-xs md:text-sm">
+        <p class="font-semibold mb-1">
+          What this means in practice
+        </p>
+        <ul class="space-y-1 text-neutral-300">
+          <li>• Clear lead generation plan, not "hope marketing".</li>
+          <li>• Language, scripts and pricing skills to win more mandates.</li>
+          <li>• Economic model so you understand your numbers, not just chase deals.</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- HOW WE WORK SECTION -->
+    <section id="how-we-work" class="space-y-4">
+      <h2 class="text-xl md:text-2xl font-semibold tracking-tight">
+        How we work with you at KW Explore
+      </h2>
+
+      <div class="grid gap-4 md:grid-cols-3 text-xs md:text-sm">
+        <div class="rounded-2xl border border-neutral-800 bg-neutral-950/80 p-4">
+          <p class="text-[11px] font-semibold uppercase tracking-[0.2em] text-neutral-400 mb-1">
+            Business, not just a desk
+          </p>
+          <p class="font-semibold mb-1">Models & systems</p>
+          <p class="text-neutral-300">
+            You plug into proven KW models for lead gen, database, listing management and finances –
+            so you build a real business, not just chase the next commission cheque.
+          </p>
+        </div>
+
+        <div class="rounded-2xl border border-neutral-800 bg-neutral-950/80 p-4">
+          <p class="text-[11px] font-semibold uppercase tracking-[0.2em] text-neutral-400 mb-1">
+            Partnership
+          </p>
+          <p class="font-semibold mb-1">Leadership & productivity coach</p>
+          <p class="text-neutral-300">
+            You are supported by the Team Leader, Market Centre staff and a Productivity Coach who
+            is directly invested in your production and growth.
+          </p>
+        </div>
+
+        <div class="rounded-2xl border border-neutral-800 bg-neutral-950/80 p-4">
+          <p class="text-[11px] font-semibold uppercase tracking-[0.2em] text-neutral-400 mb-1">
+            Culture
+          </p>
+          <p class="font-semibold mb-1">Where entrepreneurs thrive</p>
+          <p class="text-neutral-300">
+            Collaboration over competition, transparent numbers and a focus on helping each agent
+            build a business that works for their life.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- NEXT STEP / CTA -->
+    <section id="next-step" class="space-y-4">
+      <h2 class="text-xl md:text-2xl font-semibold tracking-tight">
+        Next step: your private business consultation
+      </h2>
+
+      <p class="text-sm text-neutral-300 max-w-3xl">
+        In a 30–45 minute Zoom or in-person meeting we unpack your current business,
+        plug your numbers into the KW Explore models and show you what your next 12–36 months
+        could look like here.
+      </p>
+
+      <div class="flex flex-wrap gap-3">
+        <!-- Replace href with your real booking link -->
+        <a
+          href="#"
+          class="inline-flex items-center justify-center px-4 py-2 text-sm font-medium rounded-full bg-kwred hover:bg-red-700 transition-colors"
+        >
+          Book my 1:1 with the Team Leader
+        </a>
+
+        <a
+          href="https://wa.me/27840624865"
+          class="inline-flex items-center justify-center px-4 py-2 text-sm font-medium rounded-full border border-neutral-700 hover:border-kwred hover:text-kwred transition-colors"
+        >
+          WhatsApp Dawie now
+        </a>
+      </div>
+
+      <p class="text-[11px] text-neutral-500 max-w-xl">
+        The goal is not to "sell you a franchise desk". The goal is to help you decide whether
+        KW Explore is the right partner to build the business and income you actually want.
+      </p>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="pt-6 mt-6 border-t border-neutral-900 text-[11px] text-neutral-500">
+      <div class="flex flex-wrap items-center justify-between gap-2">
+        <p>
+          © <span id="year"></span> Keller Williams Explore Realty · Where Entrepreneurs Thrive
+        </p>
+        <p>
+          Dawie du Toit · 084 062 4865 · <a href="mailto:dawie.dutoit@kwsa.co.za" class="hover:text-kwred">dawie.dutoit@kwsa.co.za</a>
+        </p>
+      </div>
+    </footer>
+  </main>
+
+  <script>
+    // Set year in footer
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
